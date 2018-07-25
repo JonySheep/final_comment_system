@@ -1,4 +1,4 @@
-package com.example.demo.app;
+package com.example.demo.app.controller;
 
 import com.example.demo.business.svc.HelloSvc;
 import org.springframework.beans.factory.annotation.Autowired;

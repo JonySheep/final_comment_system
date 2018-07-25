@@ -30,4 +30,7 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+
+	//引入gson
+	compile('com.google.code.gson:gson')
 }
