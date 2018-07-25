@@ -1,0 +1,15 @@
+/* pages/classification.wxss */
+.mainView {
+  margin: 150rpx;
+  text-align: center;
+}
+
+.chooseButton{
+  margin-top: 50rpx;
+  font-size: 30rpx;
+}
+
+.prompt{
+  color: darkgray;
+  font-size: 25rpx;
+}

@@ -1,0 +1,14 @@
+<!-- 选择所在部门 -->
+<view class="mainView">
+  <text>我是？</text>
+  <text class='prompt'>请选择所属部门
+  不同部门评价人员不同
+  中心领导需密码进入</text>
+  <button class='chooseButton' bindtap='toComment'>前台部门人员</button>
+  <button class='chooseButton' bindtap='toComment'>后台部门人员</button>
+  <button class='chooseButton' bindtap='inputPass'>中心领导</button>
+
+  <modal hidden='{{!isShowModal}}' title= '请输入验证码' confirm-text='确认' cancel-text='取消' bindcancel='cancel' bindconfirm='confirm'>
+    <input type='text'placeholder="请输入验证码" auto-focus adjust-position bindinput='getInput'/>
+  </modal>
+</view>

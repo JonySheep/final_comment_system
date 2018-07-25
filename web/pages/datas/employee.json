@@ -1,0 +1,263 @@
+{"empList":[
+  {
+    "ID": 1,
+    "name": "利欣",
+    "dept": "办公室",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 2,
+    "name": "谢梅丹",
+    "dept": "办公室",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 3,
+    "name": "黄运聪",
+    "dept": "办公室",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 4,
+    "name": "吴文俊",
+    "dept": "办公室",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 5,
+    "name": "李金婕",
+    "dept": "财务核算部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 6,
+    "name": "蔡小丽",
+    "dept": "财务核算部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 7,
+    "name": "陆跃诚",
+    "dept": "财务核算部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 8,
+    "name": "林杰玲",
+    "dept": "放款中心",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 9,
+    "name": "黄莹",
+    "dept": "放款中心",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 10,
+    "name": "杨焕莲",
+    "dept": "放款中心",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 11,
+    "name": "黄荟瑾",
+    "dept": "放款中心",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 12,
+    "name": "孔德洁",
+    "dept": "放款中心",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 13,
+    "name": "侯春萍",
+    "dept": "放款中心",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 14,
+    "name": "陆凤顺",
+    "dept": "放款中心",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 15,
+    "name": "陆文燕",
+    "dept": "放款中心",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 16,
+    "name": "黄丽洁",
+    "dept": "风险管理部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 17,
+    "name": "雷晶晶",
+    "dept": "风险管理部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 18,
+    "name": "毛林涛",
+    "dept": "风险管理部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 19,
+    "name": "林莎",
+    "dept": "风险管理部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 20,
+    "name": "王皓",
+    "dept": "风险管理部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 21,
+    "name": "罗惠",
+    "dept": "风险管理部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 22,
+    "name": "黄晓菲",
+    "dept": "风险管理部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 23,
+    "name": "梁伊妮",
+    "dept": "风险管理部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 24,
+    "name": "玉明晖",
+    "dept": "风险管理部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 25,
+    "name": "孔梦诗",
+    "dept": "风险管理部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 26,
+    "name": "黄琳",
+    "dept": "风险管理部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 27,
+    "name": "黎碧辉",
+    "dept": "风险管理部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 28,
+    "name": "秦秀",
+    "dept": "风险管理部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  },
+  {
+    "ID": 29,
+    "name": "罗荃",
+    "dept": "风险管理部",
+    "frontMarkList": [],
+    "backMarkList": [],
+    "frontMark": 0.0,
+    "backMark": 0.0
+  }
+]}

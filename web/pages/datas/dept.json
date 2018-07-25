@@ -1,0 +1,116 @@
+{"deptList":
+  [
+    {
+      "ID":1,
+      "name":"办公室",
+      "managerName":"罗木花",
+      "adMark":0,
+      "notAdMark":[],
+      "mark":0.0
+    },
+    {
+      "ID": 2,
+      "name": "财务部",
+      "managerName": "兰琦慧",
+      "adMark": 0,
+      "notAdMark": [],
+      "mark": 0.0
+    },
+    {
+      "ID": 3,
+      "name": "业务发展部",
+      "managerName": "姚远",
+      "adMark": 0,
+      "notAdMark": [],
+      "mark": 0.0
+    },
+    {
+      "ID": 4,
+      "name": "风险部",
+      "managerName": "徐业锐",
+      "adMark": 0,
+      "notAdMark": [],
+      "mark": 0.0
+    },
+    {
+      "ID": 5,
+      "name": "放款中心",
+      "managerName": "黄艳妮",
+      "adMark": 0,
+      "notAdMark": [],
+      "mark": 0.0
+    },
+    {
+      "ID": 6,
+      "name": "兴宁分中心",
+      "managerName": "温诚诚",
+      "adMark": 0,
+      "notAdMark": [],
+      "mark": 0.0
+    },
+    {
+      "ID": 7,
+      "name": "批量分中心",
+      "managerName": "蒙锐",
+      "adMark": 0,
+      "notAdMark": [],
+      "mark": 0.0
+    },
+    {
+      "ID": 8,
+      "name": "南宁分中心",
+      "managerName": "李冬梅",
+      "adMark": 0,
+      "notAdMark": [],
+      "mark": 0.0
+    },
+    {
+      "ID": 9,
+      "name": "江南分中心",
+      "managerName": "赵家辉",
+      "adMark": 0,
+      "notAdMark": [],
+      "mark": 0.0
+    },
+    {
+      "ID": 10,
+      "name": "城北分中心",
+      "managerName": "陈珈阳",
+      "adMark": 0,
+      "notAdMark": [],
+      "mark": 0.0
+    },
+    {
+      "ID": 11,
+      "name": "小企业分中心",
+      "managerName": "谢家裕",
+      "adMark": 0,
+      "notAdMark": [],
+      "mark": 0.0
+    },
+    {
+      "ID": 12,
+      "name": "业务七部",
+      "managerName": "刘倩",
+      "adMark": 0,
+      "notAdMark": [],
+      "mark": 0.0
+    },
+    {
+      "ID": 13,
+      "name": "玉林分中心",
+      "managerName": "覃玲",
+      "adMark": 0,
+      "notAdMark": [],
+      "mark": 0.0
+    },
+    {
+      "ID": 14,
+      "name": "百色分中心",
+      "managerName": "农颜宇",
+      "adMark": 0,
+      "notAdMark": [],
+      "mark": 0.0
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+/* pages/comment.wxss */
+.mainContainer{
+  margin-left: 80rpx;
+  margin-right: 80rpx;
+  text-align: center;
+}
+
+.progressLine{
+  margin:50rpx;
+}
+
+.prompt{
+  color: darkgray;
+  font-size: 20rpx;
+  margin-right: 20rpx;
+}
+
+.detail{
+  font-size: 40rpx;
+  margin-right: 70rpx;
+}
+
+.chooseView{
+  margin-top: 50rpx;
+  font-size: 35rpx;
+}
+
+.descript{
+  font-size: 25rpx;
+  color: darkgray;
+}
+
+
+.sli{
+  margin-bottom: 70rpx;
+}
+
+.total{
+  font-size: 60rpx;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nextButton{
+  margin-left: 100rpx;
+  
+}
+
