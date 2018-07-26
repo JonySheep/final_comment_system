@@ -18,10 +18,6 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 @RequestMapping("/emp")
 public class empController {
 
-    @Autowired
-    private final empSvc Svc;
-
-    public empController(empSvc Svc){this.Svc=Svc;}
 
     /**
      * 增加一个前台人员对此人的评价分数

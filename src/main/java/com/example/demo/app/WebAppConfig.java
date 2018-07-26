@@ -23,13 +23,13 @@ public class WebAppConfig extends WebMvcConfigurerAdapter {
                 base = base.substring(5);
                 System.out.println(base);
             }
-            base = new File(base).getParentFile().getParentFile().getParentFile().getAbsolutePath();
+            base = new File(base).getParentFile().getParentFile().getAbsolutePath();
             System.out.println(base);
             System.out.println("file:"+base+"/assets/");
             BASE = base;
         }else{
             System.out.println("开发环境：");
-            base = new File(base).getParentFile().getParentFile().getParentFile().getParentFile().getParentFile().getParentFile().getAbsolutePath();
+            base = new File(base).getParentFile().getParentFile().getParentFile().getParentFile().getParentFile().getAbsolutePath();
             System.out.println(base);
             System.out.println("file:"+base+"/assets/");
             BASE = base;

@@ -5,21 +5,23 @@ import com.example.demo.data.DAO.empDAOImpl;
 import com.example.demo.data.empDAO;
 import com.example.demo.entity.employee;
 import com.example.demo.util.enums.ResultMessageEnum;
+import org.springframework.stereotype.Service;
 
+@Service
 public class empSvcImpl implements empSvc {
 
     empDAO dao=empDAOImpl.getInstance();
 
     @Override
-    public ResultMessageEnum addFrontMark (int empID,int mark) {
+    public ResultMessageEnum addFrontMark (int empID,int mark) throws Exception{
 
-        return ResultMessageEnum.SUCCESS;
+        return dao.addFrontMark(empID,mark);
     }
 
     @Override
-    public ResultMessageEnum addBackMark (int empID,int mark) {
+    public ResultMessageEnum addBackMark (int empID,int mark) throws Exception{
 
-        return ResultMessageEnum.SUCCESS;
+        return dao.addBackMark(empID,mark);
     }
 
     @Override
