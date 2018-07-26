@@ -13,4 +13,5 @@ public class dept {
     private double adMark;
     private List<Double> notAdMark=new ArrayList<>();
     private double mark;
+    private int comment_num;
 }

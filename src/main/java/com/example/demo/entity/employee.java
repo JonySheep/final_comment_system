@@ -15,6 +15,8 @@ public class employee {
     private List<Integer> backMarkList=new ArrayList<>();
     private double frontMark;
     private double backMark;
+    private int front_comment_num;
+    private int back_comment_num;
 
     public ResultMessageEnum addFrontMark(int mark){
         frontMarkList.add(mark);
@@ -23,6 +25,16 @@ public class employee {
 
     public ResultMessageEnum addBackMark(int mark){
         backMarkList.add(mark);
+        return ResultMessageEnum.SUCCESS;
+    }
+
+    public ResultMessageEnum addFrontComment_num(){
+        front_comment_num++;
+        return ResultMessageEnum.SUCCESS;
+    }
+
+    public ResultMessageEnum addBackComment_num(){
+        back_comment_num++;
         return ResultMessageEnum.SUCCESS;
     }
 }

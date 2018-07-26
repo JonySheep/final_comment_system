@@ -60,6 +60,15 @@ public class empDAOImpl implements empDAO {
             for(employee e:emps.getEmpList()){
                 if(e.getID()==empID){
                     e.addFrontMark(mark);
+                    e.addFrontComment_num();
+
+                    //calculate average
+                    double sum=0;
+                    for(int i:e.getFrontMarkList()){
+                        sum+=i;
+                    }
+                    e.setFrontMark(sum/(double)e.getFront_comment_num());
+
                     break;
                 }
             }
@@ -85,6 +94,15 @@ public class empDAOImpl implements empDAO {
             for(employee e:emps.getEmpList()){
                 if(e.getID()==empID){
                     e.addBackMark(mark);
+                    e.addBackComment_num();
+
+                    //calculate average
+                    double sum=0;
+                    for(int i:e.getBackMarkList()){
+                        sum+=i;
+                    }
+                    e.setBackMark(sum/(double)e.getBack_comment_num());
+
                     break;
                 }
             }
