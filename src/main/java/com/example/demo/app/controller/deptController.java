@@ -39,9 +39,9 @@ public class deptController {
      * 增加一个中心领导分数
      * @param deptID
      */
-    @RequestMapping(value = "/{dept_id}/addAdMark")
+    @RequestMapping(value = "/{dept_id}/addAdMark/{mark}")
     public Object addAdMark(@PathVariable(value = "dept_id") int deptID,
-                            @RequestAttribute(value = "mark") int mark){
+                            @PathVariable(value = "mark") int mark){
         Map<String,Object> map =new HashMap<>();
         deptSvc svc=new deptSvcImpl();
 
@@ -61,9 +61,9 @@ public class deptController {
      * 增加一个分管领导分数
      * @param deptID
      */
-    @RequestMapping(value = "/{dept_id}/addNotAdMark")
+    @RequestMapping(value = "/{dept_id}/addNotAdMark/{mark}")
     public Object addNotAdMark(@PathVariable(value = "dept_id") int deptID,
-                            @RequestAttribute(value = "mark") int mark){
+                            @PathVariable(value = "mark") int mark){
         Map<String,Object> map =new HashMap<>();
         deptSvc svc=new deptSvcImpl();
 

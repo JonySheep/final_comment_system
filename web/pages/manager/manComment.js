@@ -93,11 +93,14 @@ Page({
   },
 
 
+  /**
+   * 更新当前页面数据
+   */
   updateData:function(){
     //最后一个
     if (this.data.count >= 14) {
       wx.navigateTo({
-        url: './final',
+        url: '../final',
       })
     }
     else {
@@ -129,6 +132,35 @@ Page({
       })
     }
 
+  },
+
+
+
+  nextDept:function(){
+    console.log(this.data.isAd);
+    let str = '';
+    let _this = this;
+    if (this.data.isAd === 'true') {
+      str = 'addAdMark';
+    }
+    else {
+      str = 'addNotAdMark';
+    }
+
+    console.log(str);
+
+    //post data
+    wx.request({
+      url: 'http://localhost:8080/dept/' + this.data.count + '/' + str + '/' + _this.data.total,
+      method: 'POST',
+      data: {},
+      header: {
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      success: function () {
+        _this.updateData();
+      }
+    })
   },
 
   /**

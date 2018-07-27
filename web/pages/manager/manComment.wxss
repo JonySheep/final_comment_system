@@ -37,7 +37,7 @@
 }
 
 .total{
-  font-size: 60rpx;
+  font-size: 50rpx;
   font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 

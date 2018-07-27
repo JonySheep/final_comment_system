@@ -101,9 +101,6 @@ Page({
    * 点击按钮得到下一个被评价者信息
    */
   nextEmp:function(){
-
-    console.log(this.data.isFront);
-
     let str='';
     let _this=this;
     if(this.data.isFront===true){
@@ -131,14 +128,6 @@ Page({
         _this.updateData();
       }
     })
-  },
-
-  json2Form:function(json) {
-    var str = [];
-    for (var p in json) {
-      str.push(encodeURIComponent(p) + "=" + encodeURIComponent(json[p]));
-    }
-    return str.join("&");
   },
 
 

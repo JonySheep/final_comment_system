@@ -44,7 +44,6 @@ Page({
    * 确认输入
    */
   confirm:function(){
-    console.log(this.data.input)
     if(this.data.isAd){
       if (this.data.input === "manager") {
         wx.navigateTo({

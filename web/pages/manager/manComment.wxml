@@ -68,11 +68,11 @@
 
       </view>
 
-      <view style='margin-bottom:60rpx;'>  
+      <view style='margin-bottom:50rpx;'>  
         <text class="total">评分合计:   </text>
         <text class="total">{{total}}</text>
 
-        <button class="nextButton" type='primary' size='mini'>下一位 {{count}}/14</button>
+        <button class="nextButton" type='primary' size='mini' bindtap='nextDept'>下一部门 {{count}}/14</button>
       </view>
 
     </scroll-view>
