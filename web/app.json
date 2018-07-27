@@ -1,11 +1,13 @@
 {
   "pages":[
+    "pages/final",
     "pages/index/index",
     "pages/classification",
     "pages/manager/manComment",
     "pages/manager/managerClassification",
     "pages/logs/logs",
     "pages/comment"
+    
     
   ],
   "window":{

@@ -50,7 +50,7 @@
     <text class="total">总分:   </text>
     <text class="total">{{total}}</text>
 
-    <button class="nextButton" type='primary' size='mini' bindtap='nextEmp'>下一位</button>
+    <button class="nextButton" type='primary' size='mini' bindtap='nextEmp'>下一位 {{count}}/29</button>
   </view>
 
 </view>

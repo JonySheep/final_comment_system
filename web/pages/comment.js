@@ -64,27 +64,37 @@ Page({
 
   updateData:function(){
 
-    let countTemp = this.data.count;
-    this.setData({ count: countTemp + 1 })
+    //最后一个
+    if(this.data.count>=29){
+      wx.navigateTo({
+        url: './final',
+      })
+    }
+    else{
+      let countTemp = this.data.count;
+      this.setData({ count: countTemp + 1 })
 
-    let _this = this;
-    wx.request({
-      url: 'http://localhost:8080/emp/' + this.data.count,
-      method: 'GET',
-      success: function (res) {
-        _this.setData({
-          name: res.data.data.name,
-          dept: res.data.data.dept,
-          //init
-          total:0,
-          value1: 1,
-          value2: 1,
-          value3: 1,
-          value4: 1,
-          value5: 1,
-        })
-      }
-    })
+      let _this = this;
+      wx.request({
+        url: 'http://localhost:8080/emp/' + this.data.count,
+        method: 'GET',
+        success: function (res) {
+          _this.setData({
+            name: res.data.data.name,
+            dept: res.data.data.dept,
+            //init
+            total: 0,
+            value1: 1,
+            value2: 1,
+            value3: 1,
+            value4: 1,
+            value5: 1,
+          })
+        }
+      })
+    }
+
+    
   },
 
   /**
