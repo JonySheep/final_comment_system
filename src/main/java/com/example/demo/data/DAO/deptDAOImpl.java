@@ -13,6 +13,14 @@ import java.io.FileWriter;
 
 public class deptDAOImpl implements deptDAO {
 
+    private static class deptDAOImplHolder{
+        private static final deptDAOImpl INSTANCE=new deptDAOImpl();
+    }
+
+    public static final deptDAOImpl getInstance(){
+        return deptDAOImplHolder.INSTANCE;
+    }
+
     @Override
     public dept getDept(int deptID) throws Exception {
         deptList depts=null;

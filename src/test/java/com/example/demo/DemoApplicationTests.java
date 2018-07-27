@@ -1,7 +1,10 @@
 package com.example.demo;
 
+import com.example.demo.business.deptSvcImpl;
 import com.example.demo.business.empSvcImpl;
+import com.example.demo.business.svc.deptSvc;
 import com.example.demo.business.svc.empSvc;
+import com.example.demo.entity.dept;
 import com.example.demo.entity.employee;
 import com.example.demo.util.enums.ResultMessageEnum;
 import static org.junit.Assert.assertEquals;
@@ -15,6 +18,7 @@ public class DemoApplicationTests {
 
 	//Emp Test
 	empSvc svc=new empSvcImpl();
+	deptSvc deptService=new deptSvcImpl();
 
 	@Test
 	public void addFrontMark() throws Exception{
@@ -48,6 +52,38 @@ public class DemoApplicationTests {
 	}
 
 
+	@Test
+	public void getDept1() throws Exception{
+		dept resDept=deptService.getDept(1);
+		assertEquals(resDept.getID(),1);
+	}
 
+
+	@Test
+	public void getDept2() throws Exception{
+		dept resDept=deptService.getDept(7);
+		assertEquals(resDept.getID(),7);
+	}
+
+
+	@Test
+	public void addAdMark() throws Exception{
+		ResultMessageEnum res=deptService.addAdMark(1,80);
+		assertEquals(deptService.getDept(1).getAdMark(),80);
+	}
+
+
+	@Test
+	public void addNotAdMark() throws Exception{
+		ResultMessageEnum res=deptService.addNotMark(1,70);
+		assertEquals(deptService.getDept(1).getNotAdMark().size(),4);
+	}
+
+
+	@Test
+	public void getMark() throws Exception{
+		ResultMessageEnum res=deptService.addNotMark(1,85);
+		assertEquals(deptService.getDept(1).getMark(),81.875,0.01);
+	}
 
 }
