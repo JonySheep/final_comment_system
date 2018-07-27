@@ -7,13 +7,29 @@ Page({
   data: {
     isShowModal:false,
     input:{},
+    isAd:true
   },
 
   /**
   * 弹出密码验证窗口
   */
   inputPass:function(){
-    this.setData({ isShowModal: true, input: ''})
+    this.setData({ 
+      isShowModal: true, 
+      input: '',
+      isAd:false})
+  },
+
+
+  /**
+   * 中心领导的密码验证
+   */
+  inputAdPass:function(){
+    this.setData({
+      isShowModal: true,
+      input: '',
+      isAd: true
+    })
   },
 
   /**
@@ -29,18 +45,35 @@ Page({
    */
   confirm:function(){
     console.log(this.data.input)
-    if(this.data.input==="123456"){
-      wx.navigateTo({
-        url: './manager/managerClassification',
-      })
+    if(this.data.isAd){
+      if (this.data.input === "manager") {
+        wx.navigateTo({
+          url: './manager/manComment?isAd=true',
+        })
+      }
+      else {
+        wx.showToast({
+          title: '验证码错误',
+          mask: true,
+          icon: 'none',
+          duration: 2000,
+        })
+      }
     }
     else{
-      wx.showToast({
-        title: '验证码错误',
-        mask:true,
-        icon:'none',
-        duration:2000,
-      })
+      if (this.data.input === "123456") {
+        wx.navigateTo({
+          url: './manager/manComment?isAd=false',
+        })
+      }
+      else {
+        wx.showToast({
+          title: '验证码错误',
+          mask: true,
+          icon: 'none',
+          duration: 2000,
+        })
+      }
     }
   },
 

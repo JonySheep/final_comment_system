@@ -16,6 +16,12 @@ Page({
     value8: 1,
     value9: 1,
     value10: 1,
+
+    //被评价部门信息
+    name:'',
+    managerName:'',
+    isAd:true,
+    count:0,
   },
 
   changeSlider1: function (e) {
@@ -82,6 +88,46 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.setData({isAd:options.isAd})
+    this.updateData();
+  },
+
+
+  updateData:function(){
+    //最后一个
+    if (this.data.count >= 14) {
+      wx.navigateTo({
+        url: './final',
+      })
+    }
+    else {
+      let countTemp = this.data.count;
+      this.setData({ count: countTemp + 1 })
+
+      let _this = this;
+      wx.request({
+        url: 'http://localhost:8080/dept/' + this.data.count,
+        method: 'GET',
+        success: function (res) {
+          _this.setData({
+            name: res.data.data.name,
+            managerName: res.data.data.managerName,
+            //init
+            total: 0,
+            value1: 1,
+            value2: 1,
+            value3: 1,
+            value4: 1,
+            value5: 1,
+            value6: 1,
+            value7: 1,
+            value8: 1,
+            value9: 1,
+            value10: 1,
+          })
+        }
+      })
+    }
 
   },
 
