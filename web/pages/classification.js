@@ -109,9 +109,16 @@ Page({
   
   },
 
-  toComment:function(){
+  toFrontComment:function(){
     wx.navigateTo({
-      url: './comment',
+      url: './comment?isFront=true',
+    })
+  },
+
+
+  toBackComment: function () {
+    wx.navigateTo({
+      url: './comment?isFront=false',
     })
   }
 })

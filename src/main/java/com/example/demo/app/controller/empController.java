@@ -25,8 +25,8 @@ public class empController {
      * @param empId 被评价人
      * @return
      */
-    @RequestMapping(value = "/{emp_id}/addFrontMark",method = POST)
-    public Object addFrontMark(@RequestAttribute(value = "mark") int mark,
+    @RequestMapping(value = "/{emp_id}/addFrontMark/{mark}",method = POST)
+    public Object addFrontMark(@PathVariable(value = "mark") int mark,
                           @PathVariable(value = "emp_id") int empId){
         Map<String,Object> map=new HashMap<>();
         empSvc service=new empSvcImpl();
@@ -49,8 +49,8 @@ public class empController {
      * @param empId 被评价人
      * @return
      */
-    @RequestMapping(value = "/{emp_id}/addBackMark",method = POST)
-    public Object addBackMark(@RequestAttribute(value = "mark") int mark,
+    @RequestMapping(value = "/{emp_id}/addBackMark/{mark}",method = POST)
+    public Object addBackMark(@PathVariable(value = "mark") int mark,
                           @PathVariable(value = "emp_id") int empId){
         Map<String,Object> map=new HashMap<>();
         empSvc service=new empSvcImpl();

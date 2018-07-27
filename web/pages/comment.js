@@ -11,6 +11,14 @@ Page({
     value3:1,
     value4:1,
     value5:1,
+
+    //被评价人信息
+    name:'',
+    dept:'',
+    count:0,
+
+    //是否前台部门
+    isFront:true,
   },
 
   changeSlider1:function(e){
@@ -47,8 +55,82 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.setData({
+      isFront:options.isFront
+    })
+    this.updateData();
   },
+
+
+  updateData:function(){
+
+    let countTemp = this.data.count;
+    this.setData({ count: countTemp + 1 })
+
+    let _this = this;
+    wx.request({
+      url: 'http://localhost:8080/emp/' + this.data.count,
+      method: 'GET',
+      success: function (res) {
+        _this.setData({
+          name: res.data.data.name,
+          dept: res.data.data.dept,
+          //init
+          total:0,
+          value1: 1,
+          value2: 1,
+          value3: 1,
+          value4: 1,
+          value5: 1,
+        })
+      }
+    })
+  },
+
+  /**
+   * 点击按钮得到下一个被评价者信息
+   */
+  nextEmp:function(){
+
+    console.log(this.data.isFront);
+
+    let str='';
+    let _this=this;
+    if(this.data.isFront===true){
+      str='addFrontMark';
+    }
+    else{
+      str='addBackMark';
+    }
+
+    let result={
+      mark: _this.data.total
+    };
+
+    console.log(result);
+  
+    //post data
+    wx.request({
+      url: 'http://localhost:8080/emp/' + this.data.count+'/'+str+'/'+_this.data.total,
+      method:'POST',
+      data:{},
+      header:{
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      success:function(){
+        _this.updateData();
+      }
+    })
+  },
+
+  json2Form:function(json) {
+    var str = [];
+    for (var p in json) {
+      str.push(encodeURIComponent(p) + "=" + encodeURIComponent(json[p]));
+    }
+    return str.join("&");
+  },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

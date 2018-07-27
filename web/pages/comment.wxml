@@ -3,43 +3,43 @@
   <form>
     <view style="flex-direction:row">
       <text class="prompt">员工姓名:</text>
-      <text class="detail">刘昊然</text>
+      <text class="detail">{{name}}</text>
       <text class="prompt">部门:</text>
-      <text class="detail">办公室</text>
+      <text class="detail">{{dept}}</text>
     </view>
 
     <scroll-view class="chooseView">
       <view class="sli">
         <text>1. 服务协作态度 </text>
         <text class="descript">态度是否主动，有无推诿</text>
-        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="20" show-value='true' bindchanging='changeSlider1'></slider>
+        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="20" show-value='true' bindchanging='changeSlider1' value='{{value1}}'></slider>
       </view>
 
       <view class="sli">
         <text>2. 服务协作质量 </text>
         <text class="descript">协作配合度以及责任心</text>
-        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="20" show-value='true' bindchanging='changeSlider2'></slider>
+        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="20" show-value='true' bindchanging='changeSlider2' value='{{value2}}'></slider>
 
       </view>
       
       <view class="sli"> 
          <text>3. 服务协作效率 </text>
         <text class="descript">服务及解决问题是否及时</text>
-        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="20" show-value='true' bindchanging='changeSlider3'></slider>
+        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="20" show-value='true' bindchanging='changeSlider3' value='{{value3}}'></slider>
 
       </view>
 
       <view class="sli">
         <text>4. 服务协作效果 </text>
         <text class="descript">是否很好完成部门间协作工作</text>
-        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="20" show-value='true' bindchanging='changeSlider4'></slider>
+        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="20" show-value='true' bindchanging='changeSlider4' value='{{value4}}'></slider>
 
       </view>
 
       <view class="sli">
         <text>5. 岗位专业能力 </text>
         <text class="descript">是否对业务进行有效指导</text>
-        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="20" show-value='true' bindchanging='changeSlider5'></slider>
+        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="20" show-value='true' bindchanging='changeSlider5' value='{{value5}}'></slider>
 
       </view>
 
@@ -50,7 +50,7 @@
     <text class="total">总分:   </text>
     <text class="total">{{total}}</text>
 
-    <button class="nextButton" type='primary' size='mini'>下一位</button>
+    <button class="nextButton" type='primary' size='mini' bindtap='nextEmp'>下一位</button>
   </view>
 
 </view>
