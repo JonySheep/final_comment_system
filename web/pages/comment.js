@@ -76,7 +76,7 @@ Page({
 
       let _this = this;
       wx.request({
-        url: 'http://localhost:8080/emp/' + this.data.count,
+        url: 'http://154.8.162.147:8080/emp/' + this.data.count,
         method: 'GET',
         success: function (res) {
           _this.setData({
@@ -103,7 +103,7 @@ Page({
   nextEmp:function(){
     let str='';
     let _this=this;
-    if(this.data.isFront===true){
+    if(this.data.isFront==='true'){
       str='addFrontMark';
     }
     else{
@@ -118,7 +118,7 @@ Page({
   
     //post data
     wx.request({
-      url: 'http://localhost:8080/emp/' + this.data.count+'/'+str+'/'+_this.data.total,
+      url: 'http://154.8.162.147:8080/emp/' + this.data.count+'/'+str+'/'+_this.data.total,
       method:'POST',
       data:{},
       header:{

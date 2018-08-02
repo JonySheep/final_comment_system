@@ -1,5 +1,6 @@
 package com.example.demo.data.DAO;
 
+import com.example.demo.app.WebAppConfig;
 import com.example.demo.data.deptDAO;
 import com.example.demo.entity.dept;
 import com.example.demo.entity.deptList;
@@ -25,8 +26,8 @@ public class deptDAOImpl implements deptDAO {
     public dept getDept(int deptID) throws Exception {
         deptList depts=null;
 
-        //String path=WebAppConfig.BASE+"/assets/employee.json";
-        String path="/Users/yangyang/assets/dept.json";
+        String path= "/assets/dept.json";
+        //String path="/Users/yangyang/assets/dept.json";
 
         String file=readFile(path);
 
@@ -48,8 +49,8 @@ public class deptDAOImpl implements deptDAO {
     @Override
     public ResultMessageEnum addAdMark(int mark, int deptID) throws Exception {
         deptList depts=null;
-        //String path=WebAppConfig.BASE+"/assets/employee.json";
-        String path="/Users/yangyang/assets/dept.json";
+        String path="/assets/dept.json";
+        //String path="/Users/yangyang/assets/dept.json";
 
         String file=readFile(path);
 
@@ -84,8 +85,8 @@ public class deptDAOImpl implements deptDAO {
     @Override
     public ResultMessageEnum addNotAdMark(int mark, int deptID) throws Exception {
         deptList depts=null;
-        //String path=WebAppConfig.BASE+"/assets/employee.json";
-        String path="/Users/yangyang/assets/dept.json";
+        String path="/assets/dept.json";
+        //String path="/Users/yangyang/assets/dept.json";
 
         String file=readFile(path);
 

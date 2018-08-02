@@ -12,59 +12,59 @@
 
       <view class="sli">
         <text>1. 执行力——部门工作效果 </text>
-        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider6' value='{{value6}}'></slider>
+        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider6' bindchange='changeSlider6' value='{{value6}}'></slider>
       </view>
 
       <view class="sli">
         <text>2. 执行力——部门工作效率 </text>
-        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider7' value='{{value7}}'></slider>
+        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider7' bindchange='changeSlider7' value='{{value7}}'></slider>
 
       </view>
       
       <view class="sli"> 
          <text>3. 执行力——部门业务流程管理 </text>
-        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider8' value='{{value8}}'></slider>
+        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider8' bindchange='changeSlider8' value='{{value8}}'></slider>
 
       </view>
 
       <view class="sli">
         <text>4. 执行力——员工及团队管理 </text>
-        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider9' value='{{value9}}'></slider>
+        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider9' bindchange='changeSlider9' value='{{value9}}'></slider>
 
       </view>
 
       <view class="sli">
         <text>5. 执行力——中心专项工作执行 </text>
-        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider10' value='{{value10}}'></slider>
+        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider10' bindchange='changeSlider10' value='{{value10}}'></slider>
 
       </view>
 
       <view class="sli">
         <text>6. 服务协作态度 </text>
-        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider1' value='{{value1}}'></slider>
+        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider1' bindchange='changeSlider1' value='{{value1}}'></slider>
       </view>
 
       <view class="sli">
         <text>7. 服务协作质量 </text>
-        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider2' value='{{value2}}'></slider>
+        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider2' bindchange='changeSlider2' value='{{value2}}'></slider>
 
       </view>
       
       <view class="sli"> 
          <text>8. 服务协作效率 </text>
-        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider3' value='{{value3}}'></slider>
+        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider3' bindchange='changeSlider3' value='{{value3}}'></slider>
 
       </view>
 
       <view class="sli">
         <text>9. 服务协作效果 </text>
-        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider4' value='{{value4}}'></slider>
+        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider4' bindchange='changeSlider4' value='{{value4}}'></slider>
 
       </view>
 
       <view class="sli">
         <text>10. 服务流程优化 </text>
-        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider5' value='{{value5}}'></slider>
+        <slider class="sli" block-size='18' class='sliderForChoose' min="1" max="10" show-value='true' bindchanging='changeSlider5' bindchange='changeSlider5' value='{{value5}}'></slider>
 
       </view>
 

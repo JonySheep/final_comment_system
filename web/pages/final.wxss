@@ -2,7 +2,8 @@
 .container{
   text-align: center;
   background-color:  aliceblue;
-  height: 1300rpx;
+  height: 1500rpx;
+  justify-content:  unset;
 }
 
 .img{

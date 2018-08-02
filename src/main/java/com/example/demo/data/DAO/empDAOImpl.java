@@ -26,8 +26,8 @@ public class empDAOImpl implements empDAO {
     public synchronized employee getEmployee(int empID) throws Exception {
 
         empList emps=null;
-        //String path=WebAppConfig.BASE+"/assets/employee.json";
-        String path="/Users/yangyang/assets/employee.json";
+        String path="/assets/employee.json";
+        //String path="/Users/yangyang/assets/employee.json";
 
         String file=readFile(path);
 
@@ -48,8 +48,8 @@ public class empDAOImpl implements empDAO {
     @Override
     public ResultMessageEnum addFrontMark(int empID, int mark) throws Exception {
         empList emps=null;
-        //String path=WebAppConfig.BASE+"/assets/employee.json";
-        String path="/Users/yangyang/assets/employee.json";
+        String path="/assets/employee.json";
+        //String path="/Users/yangyang/assets/employee.json";
 
         String file=readFile(path);
 
@@ -82,8 +82,8 @@ public class empDAOImpl implements empDAO {
     @Override
     public ResultMessageEnum addBackMark(int empID, int mark) throws Exception {
         empList emps=null;
-        //String path=WebAppConfig.BASE+"/assets/employee.json";
-        String path="/Users/yangyang/assets/employee.json";
+        String path="/assets/employee.json";
+        //String path="/Users/yangyang/assets/employee.json";
 
         String file=readFile(path);
 
