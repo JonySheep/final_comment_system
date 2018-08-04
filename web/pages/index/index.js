@@ -73,9 +73,10 @@ Page({
    * 记录已评价人的微信名称
    */
   addCommentPerson:function(name){
+    console.log(name);
     wx.request({
-      url: 'http://154.8.162.147:8080/addPerson/'+name,
-      method:POST,
+      url: 'http://localhost:8080/addPerson/'+name,
+      method:'POST',
       data: {},
       header: {
         'content-type': 'application/x-www-form-urlencoded'
@@ -90,8 +91,8 @@ Page({
   judge:function(name){
     let _this=this;
     wx.request({
-      url: 'http://154.8.162.147:8080/judge/' + name,
-      method:GET,
+      url: 'http://localhost:8080/judge/' + name,
+      method:'GET',
       success:function(){
         _this.setData({hasUserInfo:false})
       }

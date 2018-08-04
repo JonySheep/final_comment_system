@@ -9,10 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
 
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
+import static org.springframework.web.bind.annotation.RequestMethod.POST;
+
 @RestController
 public class mainController {
 
-    @RequestMapping(value = "/addPerson/{name}")
+    @RequestMapping(value = "/addPerson/{name}",method=POST)
     public Object addPerson(@PathVariable(value = "name") String name){
         Map<String,Object> map=new HashMap<>();
         userSvc service=new userSvcImpl();
@@ -29,7 +32,7 @@ public class mainController {
     }
 
 
-    @RequestMapping(value = "/judge/{name}")
+    @RequestMapping(value = "/judge/{name}",method=GET)
     public Object judge(@PathVariable(value = "name") String name){
         Map<String,Object> map=new HashMap<>();
         userSvc service=new userSvcImpl();

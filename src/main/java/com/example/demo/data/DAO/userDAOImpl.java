@@ -21,44 +21,32 @@ public class userDAOImpl implements userDAO {
     @Override
     public synchronized ResultMessageEnum addPerson(String name) throws Exception{
         userList users=null;
-        String path="/assets/users.json";
+        String path="/Users/yangyang/assets/users.json";
 
         String file=readFile(path);
 
         Gson gson=new Gson();
         users=gson.fromJson(file,userList.class);
 
-        if(users.getUserList()!=null){
-            for(String s:users.getUserList()){
-                if(s.equals(name)){
-                    users.addUser(name);
-                    return ResultMessageEnum.SUCCESS;
-                }
-            }
-        }
+        users.addUser(name);
 
-        return ResultMessageEnum.SUCCESS;
+        String jsonStr=gson.toJson(users);
+
+        return writeFile(path,jsonStr);
     }
 
     @Override
     public synchronized ResultMessageEnum judgeIsDone(String name) throws Exception{
         userList users=null;
-        String path="/assets/users.json";
+        String path="/Users/yangyang/assets/users.json";
 
         String file=readFile(path);
 
         Gson gson=new Gson();
         users=gson.fromJson(file,userList.class);
 
-        if(users.getUserList()!=null){
-            for(String s:users.getUserList()){
-                if(s.equals(name)){
-                    return users.judgeIsDone(name);
-                }
-            }
-        }
+        return users.judgeIsDone(name);
 
-        return ResultMessageEnum.FAIL;
     }
 
 

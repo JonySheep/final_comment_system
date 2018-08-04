@@ -4,6 +4,8 @@ import com.example.demo.business.deptSvcImpl;
 import com.example.demo.business.empSvcImpl;
 import com.example.demo.business.svc.deptSvc;
 import com.example.demo.business.svc.empSvc;
+import com.example.demo.business.svc.userSvc;
+import com.example.demo.business.userSvcImpl;
 import com.example.demo.entity.dept;
 import com.example.demo.entity.employee;
 import com.example.demo.util.enums.ResultMessageEnum;
@@ -19,6 +21,7 @@ public class DemoApplicationTests {
 	//Emp Test
 	empSvc svc=new empSvcImpl();
 	deptSvc deptService=new deptSvcImpl();
+	userSvc userSvc=new userSvcImpl();
 
 	@Test
 	public void addFrontMark() throws Exception{
@@ -86,4 +89,15 @@ public class DemoApplicationTests {
 		assertEquals(deptService.getDept(1).getMark(),81.875,0.01);
 	}
 
+
+	@Test
+	public void addUser1() throws Exception{
+		ResultMessageEnum res=userSvc.addPerson("YangYuqin");
+		assertEquals(userSvc.judgeIsDone("YangYuqin"),ResultMessageEnum.FAIL);
+	}
+
+	@Test
+	public void addUser2() throws Exception{
+		assertEquals(userSvc.judgeIsDone("Yu"),ResultMessageEnum.SUCCESS);
+	}
 }
