@@ -7,9 +7,9 @@
   领导需密码进入</text>
   <button class='chooseButton' bindtap='toFrontComment'>前台部门人员</button>
   <button class='chooseButton' bindtap='toBackComment'>后台部门人员</button>
-  <button class='chooseButton' bindtap='inputAdPass'>中心领导</button>
+  <button class='chooseButton' bindtap='inputAdPass'>中心领导(一把手)</button>
 
-  <button class='chooseButton' bindtap='inputPass'>非中心领导</button>
+  <button class='chooseButton' bindtap='inputPass'>中心副职领导</button>
 
   <modal hidden='{{!isShowModal}}' title= '请输入验证码' confirm-text='确认' cancel-text='取消' bindcancel='cancel' bindconfirm='confirm'>
     <input type='text'placeholder="请输入验证码" auto-focus adjust-position bindinput='getInput'/>

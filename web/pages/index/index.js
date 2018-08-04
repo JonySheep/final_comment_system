@@ -58,14 +58,7 @@ Page({
    * 点击开始
    */
   toStart:function(){
-    this.judge();
-    if(this.data.hasUserInfo){
-      this.addCommentPerson(this.data.userInfo.nickName);
-    }
-   
-    wx.navigateTo({
-      url: '../classification',
-    })
+    this.judge(this.data.userInfo.nickName);
   },
 
 
@@ -93,8 +86,24 @@ Page({
     wx.request({
       url: 'http://localhost:8080/judge/' + name,
       method:'GET',
-      success:function(){
-        _this.setData({hasUserInfo:false})
+      success:function(res){
+        console.log(res);
+        if(res.data.data==='FAIL'){
+          _this.setData({ hasUserInfo: false });
+          wx.showToast({
+            title: '您已完成评价',
+            mask: true,
+            icon: 'none',
+            duration: 2000,
+          })
+        }
+        else{
+          _this.setData({ hasUserInfo: true });
+          _this.addCommentPerson(_this.data.userInfo.nickName);
+          wx.navigateTo({
+            url: '../classification',
+          })
+        }
       }
     })
   }

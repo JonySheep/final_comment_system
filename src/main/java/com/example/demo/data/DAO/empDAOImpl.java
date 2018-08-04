@@ -46,7 +46,7 @@ public class empDAOImpl implements empDAO {
     }
 
     @Override
-    public ResultMessageEnum addFrontMark(int empID, int mark) throws Exception {
+    public synchronized ResultMessageEnum addFrontMark(int empID, int mark) throws Exception {
         empList emps=null;
         String path="/assets/employee.json";
         //String path="/Users/yangyang/assets/employee.json";
@@ -80,7 +80,7 @@ public class empDAOImpl implements empDAO {
     }
 
     @Override
-    public ResultMessageEnum addBackMark(int empID, int mark) throws Exception {
+    public synchronized ResultMessageEnum addBackMark(int empID, int mark) throws Exception {
         empList emps=null;
         String path="/assets/employee.json";
         //String path="/Users/yangyang/assets/employee.json";
