@@ -1,5 +1,8 @@
 <!--index.wxml-->
 <view class="container">
+  <text class="bankName">广西北部湾银行</text>
+  <text class="projectName">中小企业中心后台评价系统</text>
+
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
@@ -7,7 +10,14 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
+
+  <view>
+    <text class="prompt">
+        提示：1、每个人只有一次评价机会，点击开始后将无法第二次开始评价 2、评价单向进行，将不能返回修改上一位被评价人的成绩
+    </text>
+  </view>
+
   <view class="usermotto">
-    <button bindtap='toStart'>点此开始</button>
+    <button bindtap='toStart' disabled='{{!hasUserInfo}}'>点此开始</button>
   </view>
 </view>
