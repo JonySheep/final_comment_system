@@ -26,7 +26,7 @@ public class deptDAOImpl implements deptDAO {
     public synchronized dept getDept(int deptID) throws Exception {
         deptList depts=null;
 
-        String path= "/assets/dept.json";
+        String path= "/root/assets/dept.json";
         //String path="/Users/yangyang/assets/dept.json";
 
         String file=readFile(path);
@@ -49,7 +49,7 @@ public class deptDAOImpl implements deptDAO {
     @Override
     public synchronized ResultMessageEnum addAdMark(int mark, int deptID) throws Exception {
         deptList depts=null;
-        String path="/assets/dept.json";
+        String path="/root/assets/dept.json";
         //String path="/Users/yangyang/assets/dept.json";
 
         String file=readFile(path);
@@ -85,7 +85,7 @@ public class deptDAOImpl implements deptDAO {
     @Override
     public synchronized ResultMessageEnum addNotAdMark(int mark, int deptID) throws Exception {
         deptList depts=null;
-        String path="/assets/dept.json";
+        String path="/home/ubuntu/assets/dept.json";
         //String path="/Users/yangyang/assets/dept.json";
 
         String file=readFile(path);

@@ -109,7 +109,7 @@ Page({
 
       let _this = this;
       wx.request({
-        url: 'http://154.8.162.147:8080/dept/' + this.data.count,
+        url: 'http://118.126.89.104:8080/dept/' + this.data.count,
         method: 'GET',
         success: function (res) {
           _this.setData({
@@ -151,7 +151,7 @@ Page({
 
     //post data
     wx.request({
-      url: 'http://154.8.162.147:8080/dept/' + this.data.count + '/' + str + '/' + _this.data.total,
+      url: 'http://118.126.89.104:8080/dept/' + this.data.count + '/' + str + '/' + _this.data.total,
       method: 'POST',
       data: {},
       header: {

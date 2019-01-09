@@ -142,14 +142,15 @@ Page({
   },
 
   toFrontComment:function(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: './comment?isFront=true',
+      
     })
   },
 
 
   toBackComment: function () {
-    wx.navigateTo({
+    wx.redirectTo({
       url: './comment?isFront=false',
     })
   }

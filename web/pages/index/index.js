@@ -66,9 +66,10 @@ Page({
    * 记录已评价人的微信名称
    */
   addCommentPerson:function(name){
-    console.log(name);
+    var _this = this;
+    
     wx.request({
-      url: 'http://localhost:8080/addPerson/'+name,
+      url: app.globalData.serverUrl +  'addPerson/'+ name,
       method:'POST',
       data: {},
       header: {
@@ -83,8 +84,9 @@ Page({
    */
   judge:function(name){
     let _this=this;
+    console.log(this.globalData);
     wx.request({
-      url: 'http://localhost:8080/judge/' + name,
+      url: app.globalData.serverUrl + 'judge/' + name,
       method:'GET',
       success:function(res){
         console.log(res);

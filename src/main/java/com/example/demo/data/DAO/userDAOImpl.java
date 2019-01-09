@@ -21,7 +21,7 @@ public class userDAOImpl implements userDAO {
     @Override
     public synchronized ResultMessageEnum addPerson(String name) throws Exception{
         userList users=null;
-        String path="/Users/yangyang/assets/users.json";
+        String path="/root/assets/users.json";
 
         String file=readFile(path);
 
@@ -38,7 +38,7 @@ public class userDAOImpl implements userDAO {
     @Override
     public synchronized ResultMessageEnum judgeIsDone(String name) throws Exception{
         userList users=null;
-        String path="/Users/yangyang/assets/users.json";
+        String path="/root/assets/users.json";
 
         String file=readFile(path);
 
