@@ -84,7 +84,7 @@ Page({
    */
   judge:function(name){
     let _this=this;
-    console.log(this.globalData);
+    console.log(name);
     wx.request({
       url: app.globalData.serverUrl + 'judge/' + name,
       method:'GET',

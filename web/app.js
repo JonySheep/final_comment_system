@@ -35,6 +35,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    serverUrl: "https://www.yikuyang.cn/"
+    serverUrl: "https://yikuyang.cn/"
   }
 })
