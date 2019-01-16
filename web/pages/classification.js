@@ -46,7 +46,7 @@ Page({
   confirm:function(){
     if(this.data.isAd){
       if (this.data.input === "manager") {
-        wx.navigateTo({
+        wx.redirectTo({
           url: './manager/manComment?isAd=true',
         })
       }
@@ -61,7 +61,7 @@ Page({
     }
     else{
       if (this.data.input === "123456") {
-        wx.navigateTo({
+        wx.redirectTo({
           url: './manager/manComment?isAd=false',
         })
       }

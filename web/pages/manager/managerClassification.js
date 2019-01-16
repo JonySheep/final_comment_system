@@ -9,7 +9,7 @@ Page({
   },
 
   toManComment:function(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: './manComment',
     })
   },

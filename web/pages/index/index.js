@@ -59,6 +59,7 @@ Page({
    */
   toStart:function(){
     this.judge(this.data.userInfo.nickName);
+    
   },
 
 
